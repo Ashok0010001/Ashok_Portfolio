@@ -90,7 +90,7 @@
       color: var(--text-color) !important;
       margin: 0.25rem 0;
       padding: 0.5rem 1rem !important;
-      border-radius: 4px;
+      border-radius: 12px;
       transition: all 0.3s ease;
       text-align: center;
     }
@@ -188,6 +188,12 @@
       bottom: 0;
       background: radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(157, 0, 255, 0.1) 0%, transparent 50%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
     }
 
     .hero-content h1 {
@@ -298,7 +304,7 @@
     .about-info {
       background: var(--card-bg);
       padding: 25px;
-      border-radius: 15px;
+      border-radius: 20px;
       border-left: 5px solid var(--primary-color);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       margin: 0 10px;
@@ -377,7 +383,7 @@
     .skill-category {
       background: var(--card-bg);
       padding: 20px;
-      border-radius: 15px;
+      border-radius: 20px;
       border: 1px solid rgba(0, 217, 255, 0.1);
       transition: transform 0.3s ease;
     }
@@ -498,7 +504,7 @@
     .portfolio-item {
       margin-bottom: 20px;
       overflow: hidden;
-      border-radius: 15px;
+      border-radius: 20px;
       position: relative;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -615,7 +621,7 @@
       background: var(--card-bg);
       max-width: 1000px;
       width: 100%;
-      border-radius: 20px;
+      border-radius: 25px;
       padding: 30px;
       position: relative;
       border: 1px solid var(--primary-color);
@@ -687,7 +693,7 @@
     .modal-main-img-container {
       width: 100%;
       height: 280px;
-      border-radius: 15px;
+      border-radius: 20px;
       overflow: hidden;
       border: 2px solid rgba(0, 217, 255, 0.3);
       margin-bottom: 15px;
@@ -718,7 +724,7 @@
     .modal-thumb-container {
       width: 90px;
       height: 70px;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
       cursor: pointer;
       border: 2px solid transparent;
@@ -900,7 +906,7 @@
     .resume-content {
       background: var(--card-bg);
       padding: 25px;
-      border-radius: 15px;
+      border-radius: 20px;
       border-left: 5px solid var(--primary-color);
       margin: 0 10px;
     }
@@ -970,7 +976,7 @@
     .education-details {
       background: rgba(255, 255, 255, 0.03);
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 15px;
       margin-top: 15px;
       border-left: 3px solid var(--primary-color);
     }
@@ -1063,7 +1069,7 @@
     .contact-info-card {
       background: var(--card-bg);
       padding: 25px;
-      border-radius: 15px;
+      border-radius: 20px;
       text-align: center;
       border-top: 4px solid var(--primary-color);
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
@@ -1220,7 +1226,7 @@
       margin-bottom: 15px;
       padding: 12px;
       background: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
+      border-radius: 15px;
       transition: all 0.3s ease;
       text-decoration: none !important;
       color: inherit !important;
@@ -1604,6 +1610,7 @@
         <button class="filter-btn" data-filter="unreal">Unreal Engine</button>
         <button class="filter-btn" data-filter="unity">Unity</button>
         <button class="filter-btn" data-filter="arvr">AR/VR</button>
+        <button class="filter-btn" data-filter="3dmodels">3D Models</button>
       </div>
       <div class="row portfolio-grid">
         <!-- Project 1 - Fantasy RPG Game -->
@@ -1628,7 +1635,7 @@
               class="portfolio-img" alt="Mobile Adventure Game">
             <div class="portfolio-overlay">
               <div class="portfolio-overlay-content">
-                <h4>Mobile Adventure Game</h4>
+                <h4>Soon...</h4>
                 <p>Unity • C# • Mobile Optimization</p>
                 <span class="view-details-btn">
                   <i class="bi bi-arrows-fullscreen"></i> View Details
@@ -1640,12 +1647,26 @@
         <!-- Project 3 - VR Simulation Experience -->
         <div class="col-md-6 col-lg-4 portfolio-item" data-category="arvr" data-project-id="3">
           <div class="portfolio-card">
-            <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=600&h=400"
-              class="portfolio-img" alt="VR Simulation Experience">
+            <img src="Home.png" class="portfolio-img" alt="VR Simulation Experience">
             <div class="portfolio-overlay">
               <div class="portfolio-overlay-content">
-                <h4>VR Simulation Experience</h4>
-                <p>Unity VR • Oculus SDK • 3D Interaction</p>
+                <h4>AR Application</h4>
+                <p>AR • Android</p>
+                <span class="view-details-btn">
+                  <i class="bi bi-arrows-fullscreen"></i> View Details
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 - 3D Character Model -->
+        <div class="col-md-6 col-lg-4 portfolio-item" data-category="3dmodels" data-project-id="4">
+          <div class="portfolio-card">
+            <img src="assets/img/portfolio/3dmodels/1712772428956.jpg" class="portfolio-img" alt="3D Model">
+            <div class="portfolio-overlay">
+              <div class="portfolio-overlay-content">
+                <h4>3D Models</h4>
+                <p>Blender • Sculpting • Texturing</p>
                 <span class="view-details-btn">
                   <i class="bi bi-arrows-fullscreen"></i> View Details
                 </span>
@@ -1680,6 +1701,24 @@
             </div>
             <div class="modal-thumb-container">
               <img src="Platform.png" class="modal-thumb" data-src="Platform.png" alt="Character Design">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/marooned/WhatsApp%20Image%202026-01-28%20at%2010.58.10%20AM.jpeg"
+                class="modal-thumb"
+                data-src="assets/img/portfolio/marooned/WhatsApp%20Image%202026-01-28%20at%2010.58.10%20AM.jpeg"
+                alt="Gameplay 3">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/marooned/WhatsApp%20Image%202026-01-28%20at%2011.00.03%20AM.jpeg"
+                class="modal-thumb"
+                data-src="assets/img/portfolio/marooned/WhatsApp%20Image%202026-01-28%20at%2011.00.03%20AM.jpeg"
+                alt="Gameplay 4">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/marooned/WhatsApp%20Iwmage%202026-01-28%20at%2011.00.03%20AM.jpeg"
+                class="modal-thumb"
+                data-src="assets/img/portfolio/marooned/WhatsApp%20Iwmage%202026-01-28%20at%2011.00.03%20AM.jpeg"
+                alt="Gameplay 5">
             </div>
           </div>
         </div>
@@ -1716,7 +1755,7 @@
     <div class="modal-content">
       <button class="modal-close">&times;</button>
       <div class="modal-header">
-        <h2>Mobile Adventure Game</h2>
+        <h2>Soon...</h2>
         <p class="project-category">Unity | iOS/Android</p>
       </div>
       <div class="modal-body">
@@ -1750,26 +1789,24 @@
           <div class="modal-info-section">
             <h3>Project Overview</h3>
             <p style="color: var(--text-muted); margin-bottom: 15px;">
-              A 2D adventure platformer optimized for mobile devices featuring intuitive
-              touch controls, multiple levels, collectibles, and boss battles. The game
-              includes a level editor and achievement system.
+              Soon...
             </p>
-            <ul>
+            <!--<ul>
               <li><strong>Role:</strong> Game Developer</li>
               <li><strong>Duration:</strong> 4 months</li>
               <li><strong>Team Size:</strong> Solo Project</li>
               <li><strong>Platform:</strong> Android, iOS</li>
-            </ul>
+            </ul>  -->
           </div>
 
           <div class="modal-info-section">
             <h3>Technologies Used</h3>
             <div class="tech-stack">
-              <span class="tech-tag">Unity 2022</span>
+              <!--<span class="tech-tag">Unity 2022</span>
               <span class="tech-tag">C#</span>
               <span class="tech-tag">2D Toolkit</span>
               <span class="tech-tag">Android SDK</span>
-              <span class="tech-tag">iOS SDK</span>
+              <span class="tech-tag">iOS SDK</span>-->
             </div>
           </div>
         </div>
@@ -1782,33 +1819,23 @@
     <div class="modal-content">
       <button class="modal-close">&times;</button>
       <div class="modal-header">
-        <h2>VR Simulation Experience</h2>
-        <p class="project-category">Unity VR | Oculus Quest</p>
+        <h2>AR Application</h2>
+        <p class="project-category">AR | Android</p>
       </div>
       <div class="modal-body">
         <div class="modal-gallery">
           <div class="modal-main-img-container">
-            <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&h=450"
-              class="modal-main-img" id="modal-main-3" alt="VR Simulation">
+            <img src="Home.png" class="modal-main-img" id="modal-main-3" alt="VR Simulation">
           </div>
           <div class="modal-thumbnails">
             <div class="modal-thumb-container active">
-              <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=200&h=150"
-                class="modal-thumb"
-                data-src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&h=450"
-                alt="VR Experience 1">
+              <img src="Home.png" class="modal-thumb" data-src="Home.png" alt="VR Experience 1">
             </div>
             <div class="modal-thumb-container">
-              <img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=200&h=150"
-                class="modal-thumb"
-                data-src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=800&h=450"
-                alt="VR Experience 2">
+              <img src="Earth.png" class="modal-thumb" data-src="Earth.png" alt="VR Experience 2">
             </div>
             <div class="modal-thumb-container">
-              <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=200&h=150"
-                class="modal-thumb"
-                data-src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=800&h=450"
-                alt="VR Interaction">
+              <img src="Mars.png" class="modal-thumb" data-src="Mars.png" alt="VR Interaction">
             </div>
           </div>
         </div>
@@ -1816,26 +1843,105 @@
           <div class="modal-info-section">
             <h3>Project Overview</h3>
             <p style="color: var(--text-muted); margin-bottom: 15px;">
-              An immersive VR educational simulation that teaches physics concepts through
-              interactive experiments. Users can manipulate objects in a zero-gravity environment
-              and observe real-time physics simulations.
+              It's a AR Application that can be used to view the planets in 3D
             </p>
             <ul>
-              <li><strong>Role:</strong> VR Developer & Interaction Designer</li>
-              <li><strong>Duration:</strong> 3 months</li>
-              <li><strong>Team Size:</strong> 2 developers</li>
-              <li><strong>Platform:</strong> Oculus Quest 2</li>
+              <li><strong>Role:</strong> AR Developer</li>
+              <li><strong>Duration:</strong> 2 days</li>
+              <li><strong>Team Size:</strong> 1 developer</li>
+              <li><strong>Platform:</strong> Android</li>
             </ul>
           </div>
 
           <div class="modal-info-section">
             <h3>Technologies Used</h3>
             <div class="tech-stack">
-              <span class="tech-tag">Unity XR</span>
-              <span class="tech-tag">Oculus SDK</span>
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">AR Foundation</span>
               <span class="tech-tag">C#</span>
-              <span class="tech-tag">Hand Tracking</span>
-              <span class="tech-tag">Physics Engine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 4 Modal -->
+  <div id="project-modal-4" class="portfolio-modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="modal-header">
+        <h2>3D Models</h2>
+        <p class="project-category">Blender | 3D Modeling</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-gallery">
+          <div class="modal-main-img-container">
+            <img src="assets/img/portfolio/3dmodels/1712772428956.jpg" class="modal-main-img" id="modal-main-4"
+              alt="3D Models">
+          </div>
+          <div class="modal-thumbnails">
+            <div class="modal-thumb-container active">
+              <img src="assets/img/portfolio/3dmodels/1731664333244.jpg" class="modal-thumb"
+                data-src="assets/img/portfolio/3dmodels/1731664333244.jpg" alt="3D Model 1">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/3dmodels/1731664333714.jpg" class="modal-thumb"
+                data-src="assets/img/portfolio/3dmodels/1731664333714.jpg" alt="3D Model 2">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/3dmodels/1731664333715.jpg" class="modal-thumb"
+                data-src="assets/img/portfolio/3dmodels/1731664333715.jpg" alt="3D Model 3">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/3dmodels/1712772428956.jpg" class="modal-thumb"
+                data-src="assets/img/portfolio/3dmodels/1712772428956.jpg" alt="3D Model 4">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/3dmodels/1712772430012.jpg" class="modal-thumb"
+                data-src="assets/img/portfolio/3dmodels/1712772430012.jpg" alt="3D Model 5">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/3dmodels/1712772430199.jpg" class="modal-thumb"
+                data-src="assets/img/portfolio/3dmodels/1712772430199.jpg" alt="3D Model 6">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/3dmodels/1731664333735.jpg" class="modal-thumb"
+                data-src="assets/img/portfolio/3dmodels/1731664333735.jpg" alt="3D Model 7">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/3dmodels/1731664333769.jpg" class="modal-thumb"
+                data-src="assets/img/portfolio/3dmodels/1731664333769.jpg" alt="3D Model 8">
+            </div>
+            <div class="modal-thumb-container">
+              <img src="assets/img/portfolio/3dmodels/1731664333945.jpg" class="modal-thumb"
+                data-src="assets/img/portfolio/3dmodels/1731664333945.jpg" alt="3D Model 9">
+            </div>
+          </div>
+        </div>
+        <div class="modal-info">
+          <div class="modal-info-section">
+            <h3>Project Overview</h3>
+            <p style="color: var(--text-muted); margin-bottom: 15px;">
+              A collection of 3D models including characters and mobile phones, featuring detailed sculpting,
+              modeling, lighting, and rendering created in Blender.
+            </p>
+            <ul>
+              <li><strong>Role:</strong> 3D Artist</li>
+              <li><strong>Duration:</strong> 2 months</li>
+              <li><strong>Team Size:</strong> Solo Project</li>
+              <li><strong>Platform:</strong> Game-Ready Asset</li>
+            </ul>
+          </div>
+
+          <div class="modal-info-section">
+            <h3>Technologies Used</h3>
+            <div class="tech-stack">
+              <span class="tech-tag">Blender</span>
+              <span class="tech-tag">Sculpting</span>
+              <span class="tech-tag">UV Unwrapping</span>
+              <span class="tech-tag">PBR Texturing</span>
+              <span class="tech-tag">Rigging</span>
             </div>
           </div>
         </div>
